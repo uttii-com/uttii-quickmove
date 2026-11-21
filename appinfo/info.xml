@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='utf-8'?>
+<info xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://apps.nextcloud.com/schema/apps/info.xsd">
+    <id>quickmove</id>
+    <name>uttii-QuickMove</name>
+    <summary lang="en">Move files and folders to favorite destinations in one click without browsing folders.</summary>
+    <summary lang="ja">登録した移動先フォルダへ階層を辿らずワンクリックで即座に移動。</summary>
+    <description lang="en">Eliminate the tedious steps of opening the standard Move dialog and clicking through deep folder trees every time. **uttii-QuickMove** puts your favorite destination folders right inside the Files context menu.
+
+- **One-Click Filing**: Move items straight to registered destinations (such as `Archive` or `Inbox`) directly from the right-click menu.
+- **Batch Move**: Select multiple files and folders and move them all at once.
+- **Zero Page Reload**: Uses Nextcloud EventBus to remove moved items from the current list immediately and smoothly.
+- **Flexible Management &amp; Bilingual UI**: Add, edit, or remove destinations from either the Files modal or Personal Settings, with Japanese (default) and English switching.</description>
+    <description lang="ja">標準の「移動またはコピー」ダイアログで毎回フォルダ階層を辿る手間を解消します。**uttii-QuickMove** は、よく使う移動先を Files の右クリックメニューに直接追加します。
+
+- **ワンクリック整理**：`Archive` や `Inbox` など登録済みの移動先へ、右クリックから1回で即座に移動できます。
+- **複数アイテムの一括移動**：複数のファイル・フォルダを選択してまとめて移動できます。
+- **リロードなしの即時反映**：Nextcloud EventBus 連携により、画面を再読み込みせず一覧から即座に反映されます。
+- **かんたん登録＆言語切替**：Files モーダルまたは個人設定から移動先を管理でき、日本語（デフォルト）／英語を切り替えられます。</description>
+    <version>0.2.0</version>
+    <licence>AGPL-3.0-or-later</licence>
+    <author mail="info@uttii.com" homepage="https://uttii.com/">uttii.com</author>
+    <website>https://app-nextcloud.uttii.com/</website>
+    <repository type="git">https://github.com/uttii-com/uttii-quickmove.git</repository>
+    <bugs>https://github.com/uttii-com/uttii-quickmove/issues</bugs>
+    <screenshot>https://raw.githubusercontent.com/uttii-com/uttii-quickmove/main/screenshots/main.png</screenshot>
+    <screenshot>https://raw.githubusercontent.com/uttii-com/uttii-quickmove/main/screenshots/ui.png</screenshot>
+    <screenshot>https://raw.githubusercontent.com/uttii-com/uttii-quickmove/main/screenshots/settings.png</screenshot>
+    <namespace>QuickMove</namespace>
+    <category>files</category>
+    <dependencies>
+        <nextcloud min-version="28" max-version="35" />
+    </dependencies>
+    <settings>
+        <personal>OCA\QuickMove\Settings\PersonalSettings</personal>
+        <personal-section>OCA\QuickMove\Settings\PersonalSection</personal-section>
+    </settings>
+</info>
